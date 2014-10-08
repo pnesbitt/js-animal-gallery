@@ -45,7 +45,12 @@
 
 
   <!-- Start main content -->
-
+    <div id="slides">
+        <img src="resources/example-slide-350-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+        <img src="resources/example-slide-350-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+        <img src="resources/example-slide-350-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+        <img src="resources/example-slide-350-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+    </div>
 
   <div id="footer" class="section">
     <div class="container">
@@ -61,5 +66,15 @@
 
   <!-- SlidesJS Required: Link to jQuery -->
   <script src="resources/jquery-1.9.1.min.js"></script>
-
+  <script src="jquery.slides.min.js"></script>
+  
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 350
+      });
+    });
+  </script>
+  
 </body></html>
